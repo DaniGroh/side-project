@@ -1,8 +1,12 @@
+import Routes from './routes';
+import GlobalStyle from './styles/global';
+
 function App() {
   return (
-    <div className="App">
-      <span>Arquitetura para aplicações React v2</span>
-    </div>
+    <>
+      <Routes />
+      <GlobalStyle />
+    </>
   );
 }
 
