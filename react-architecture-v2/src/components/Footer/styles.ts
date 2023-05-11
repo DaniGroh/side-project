@@ -3,6 +3,7 @@ import { theme } from '../../styles';
 
 export const Container = styled.div`
   position: absolute;
+  width: 100%;
 `;
 
 export const HelpList = styled.div`
@@ -13,6 +14,7 @@ export const HelpList = styled.div`
   text-align: right;
   align-items: flex-end;
   flex-direction: column;
+  z-index: 999;
 
   button {
     padding: 20px;
@@ -47,8 +49,12 @@ export const HelpIcon = styled.button`
 `;
 export const Footer = styled.div`
   position: relative;
-  width: 100%;
   height: 60px;
-  padding: 0 24px;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
   background-color: ${theme.colors.white};
+  color: #8c8c8c;
+  border-top: 1px solid ${theme.colors.grey};
+  margin-top: auto;
+  margin-bottom: auto;
 `;

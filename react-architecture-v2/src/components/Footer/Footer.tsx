@@ -32,7 +32,7 @@ export function Footer() {
           </button>
         </S.HelpList>
       )}
-      <S.Footer> Aqui é o rodapé</S.Footer>
+      <S.Footer>Stay Fashion S.A.- Fashion Avenue - Brazil</S.Footer>
     </S.Container>
   );
 }
