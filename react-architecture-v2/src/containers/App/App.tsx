@@ -1,10 +1,17 @@
-import * as S from './styles';
+import { useNavigate } from 'react-router-dom';
 import { IAppContainerProps } from './interfaces';
+import { Footer, Header } from '../../components';
+import * as S from './styles';
 
 export default function AppContainer({ children }: IAppContainerProps) {
+  const navigate = useNavigate();
   return (
     <S.Container>
-      <S.Content>{children}</S.Content>
+      <S.Content>
+        <Header changePage={navigate} />
+        {children}
+        <Footer />
+      </S.Content>
     </S.Container>
   );
 }

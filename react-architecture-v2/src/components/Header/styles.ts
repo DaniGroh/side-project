@@ -34,6 +34,13 @@ export const Logo = styled.button`
 export const Nav = styled.div`
   height: 100%;
 `;
+
+export const NavIcon = styled.div`
+  padding 10px;
+  height: 20px;
+  width: 20px;
+`;
+
 export const NavItem = styled.button`
   padding: 10px 16px;
   height: 100%;

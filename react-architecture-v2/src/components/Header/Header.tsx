@@ -1,8 +1,33 @@
+import { useCallback } from 'react';
 import { MdOutlineShoppingBag, MdSearch } from 'react-icons/md';
-import * as S from './styles';
 import logo from '../../assets/logo.png';
+import { IHeaderProps, IPage } from './interfaces';
+import * as S from './styles';
 
-export function Header() {
+export function Header({ changePage }: IHeaderProps) {
+  const pages: IPage[] = [
+    {
+      id: 'home',
+      title: 'Pagina Inicial',
+      link: '/',
+    },
+    {
+      id: 'products',
+      title: 'Produtos',
+      link: '/produtos',
+    },
+  ];
+
+  const handleSelectPage = useCallback(
+    (pageLink: string) => {
+      const pageArray = pages.find((page) => page.link === pageLink);
+      if (pageArray) {
+        changePage(pageArray.link);
+      }
+    },
+    [pages]
+  );
+
   return (
     <S.Container>
       <S.Header>
@@ -10,9 +35,15 @@ export function Header() {
           <img src={logo} alt="Logo" />
         </S.Logo>
         <S.Nav>
-          <S.NavItem type="button">Novidades</S.NavItem>
-          <S.NavItem type="button">Produtos</S.NavItem>
-          <S.NavItem type="button">História</S.NavItem>
+          {pages.map((page) => (
+            <S.NavItem
+              type="button"
+              key={page.link}
+              onClick={() => handleSelectPage(page.link)}
+            >
+              {page.title}
+            </S.NavItem>
+          ))}
         </S.Nav>
         <S.Actions>
           <S.Login>entrar</S.Login>

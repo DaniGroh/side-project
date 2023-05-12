@@ -1,22 +1,20 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { AppContainer } from '../containers';
-import { Dashboard } from '../pages';
+import { Dashboard, Products } from '../pages';
 import PATHS_ROUTES from './paths';
 
 function AppRoutes() {
   return (
-    <AppContainer>
-      <Routes>
-        <Route
-          path={PATHS_ROUTES.APP.DASHBOARD.DEFAULT}
-          element={<Dashboard />}
-        />
-        <Route
-          path="*"
-          element={<Navigate to={PATHS_ROUTES.APP.DASHBOARD.DEFAULT} replace />}
-        />
-      </Routes>
-    </AppContainer>
+    <Routes>
+      <Route
+        path={PATHS_ROUTES.APP.DASHBOARD.DEFAULT}
+        element={<Dashboard />}
+      />
+      <Route path={PATHS_ROUTES.APP.PRODUCTS.DEFAULT} element={<Products />} />
+      <Route
+        path="*"
+        element={<Navigate to={PATHS_ROUTES.APP.DASHBOARD.DEFAULT} replace />}
+      />
+    </Routes>
   );
 }
 

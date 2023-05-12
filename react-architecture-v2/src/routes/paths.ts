@@ -3,6 +3,9 @@ export default {
     DASHBOARD: {
       DEFAULT: '/',
     },
+    PRODUCTS: {
+      DEFAULT: '/produtos',
+    },
   },
   COMMON: {
     NOT_FOUND: '/404',
