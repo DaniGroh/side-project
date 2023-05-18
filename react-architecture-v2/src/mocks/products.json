@@ -1,0 +1,107 @@
+[
+  {
+    "_id": "1",
+    "name": "Blusinha",
+    "price": 100,
+    "size": [
+      {
+        "sizeName": "P",
+        "available": true
+      },
+      {
+        "sizeName": "M",
+        "available": true
+      },
+      {
+        "sizeName": "G",
+        "available": true
+      }
+    ],
+    "description": "Blusinha báscia",
+    "image": "https://i.imgur.com/UEP5yWx.jpeg",
+    "installments": {
+      "numberOfInstallments": 5,
+      "priceOfInstallments": 20
+    }
+  },
+  {
+    "_id": "2",
+    "name": "Casaco",
+    "price": 145,
+    "size": [
+      {
+        "sizeName": "P",
+        "available": true
+      },
+      {
+        "sizeName": "M",
+        "available": true
+      },
+      {
+        "sizeName": "G",
+        "available": true
+      },
+      {
+        "sizeName": "GG",
+        "available": true
+      }
+    ],
+    "description": "Melhor casaco do mundo",
+    "image": "https://i.imgur.com/MTGMUN0.jpeg",
+    "installments": {
+      "numberOfInstallments": 10,
+      "priceOfInstallments": 14.5
+    }
+  },
+
+  {
+    "_id": "3",
+    "name": "Jaqueta",
+    "price": 500,
+    "size": [
+      {
+        "sizeName": "P",
+        "available": true
+      },
+      {
+        "sizeName": "M",
+        "available": true
+      },
+      {
+        "sizeName": "G",
+        "available": true
+      }
+    ],
+    "description": "Jaqueta para arrasar no frio",
+    "image": "https://i.imgur.com/zZ6CgXj.jpeg",
+    "installments": {
+      "numberOfInstallments": 10,
+      "priceOfInstallments": 50
+    }
+  },
+  {
+    "_id": "4",
+    "name": "Shorts",
+    "price": 220,
+    "size": [
+      {
+        "sizeName": "P",
+        "available": true
+      },
+      {
+        "sizeName": "M",
+        "available": true
+      },
+      {
+        "sizeName": "G",
+        "available": false
+      }
+    ],
+    "description": "Shortinho da balada",
+    "image": "https://i.imgur.com/Kn36BOB.jpeg",
+    "installments": {
+      "numberOfInstallments": 6,
+      "priceOfInstallments": 20
+    }
+  }
+]
