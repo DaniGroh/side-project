@@ -1,4 +1,5 @@
 import { Dashboard } from './Dashboard';
-import { Products } from './Products';
+import { ClothesLine } from './ClothesLine';
+import { Clothing } from './Clothing';
 
-export { Dashboard, Products };
+export { Dashboard, ClothesLine, Clothing };

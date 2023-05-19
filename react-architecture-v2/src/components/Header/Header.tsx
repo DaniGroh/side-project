@@ -12,9 +12,9 @@ export function Header({ changePage }: IHeaderProps) {
       link: '/',
     },
     {
-      id: 'products',
+      id: 'clothesLine',
       title: 'Produtos',
-      link: '/produtos',
+      link: '/lista',
     },
   ];
 

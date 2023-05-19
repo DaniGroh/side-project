@@ -1,5 +1,5 @@
 import { IProduct } from '../../model/Product';
 
-export type IProductBoxProps = {
+export type IStateLocation = {
   data: IProduct;
 };

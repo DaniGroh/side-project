@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Dashboard, Products } from '../pages';
+import { Dashboard, ClothesLine, Clothing } from '../pages';
 import PATHS_ROUTES from './paths';
 
 function AppRoutes() {
@@ -9,7 +9,11 @@ function AppRoutes() {
         path={PATHS_ROUTES.APP.DASHBOARD.DEFAULT}
         element={<Dashboard />}
       />
-      <Route path={PATHS_ROUTES.APP.PRODUCTS.DEFAULT} element={<Products />} />
+      <Route
+        path={PATHS_ROUTES.APP.CLOTHESLINE.DEFAULT}
+        element={<ClothesLine />}
+      />
+      <Route path={PATHS_ROUTES.APP.CLOTHING.DEFAULT} element={<Clothing />} />
       <Route
         path="*"
         element={<Navigate to={PATHS_ROUTES.APP.DASHBOARD.DEFAULT} replace />}

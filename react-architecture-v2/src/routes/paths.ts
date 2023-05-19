@@ -3,8 +3,11 @@ export default {
     DASHBOARD: {
       DEFAULT: '/',
     },
-    PRODUCTS: {
-      DEFAULT: '/produtos',
+    CLOTHESLINE: {
+      DEFAULT: '/lista',
+    },
+    CLOTHING: {
+      DEFAULT: '/produto',
     },
   },
   COMMON: {

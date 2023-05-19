@@ -10,6 +10,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-itens: center;
   padding-bottom: 20px;
+  cursor: pointer;
 `;
 
 export const ProductBanner = styled.div`
