@@ -19,6 +19,7 @@ export const HelpList = styled.div`
   button {
     padding: 20px;
     border-radius: 40px;
+    border: 1px solid ${theme.colors.grey};
     background-color: ${theme.colors.white};
     font-size: 16px;
     margin: 5px;
@@ -51,10 +52,9 @@ export const Footer = styled.div`
   position: relative;
   height: 60px;
   padding: 20px 0px 20px 0px;
+  margin-top: 32px;
   text-align: center;
   background-color: ${theme.colors.white};
   color: #8c8c8c;
   border-top: 1px solid ${theme.colors.grey};
-  margin-top: auto;
-  margin-bottom: auto;
 `;

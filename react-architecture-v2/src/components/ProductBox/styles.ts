@@ -5,6 +5,10 @@ interface SizeStyleProps {
   visible: boolean;
 }
 
+interface SizeAvailableStyleProps {
+  available: boolean;
+}
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,7 +33,7 @@ export const ProductImage = styled.img`
 export const Title = styled.div`
   display: flex;
   justify-content: center;
-  font-weight: ${theme.font.weight.semiBold};
+  font-weight: ${theme.fontWeight.semiBold};
   font-size: 18px;
 `;
 
@@ -56,7 +60,7 @@ export const SizeContainer = styled.div`
   `}
 `;
 
-export const SizeAvailabel = styled.div`
+export const SizeAvailable = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,18 +75,16 @@ export const SizeAvailabel = styled.div`
     background-color: ${theme.colors.black};
     color: ${theme.colors.white};
   }
-`;
 
-export const SizeUnavailabel = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  width: 30px;
-  border: 1px solid ${theme.colors.black};
-  border-radius: 60px;
-  margin: 5px;
-  background-color: ${theme.colors.darkGrey};
+  ${({ available }: SizeAvailableStyleProps) => css`
+    ${!available &&
+    `
+      background-color: ${theme.colors.darkGrey};
+      :hover {
+        background-color: ${theme.colors.darkGrey};
+        color: ${theme.colors.black};
+      }`}
+  `}
 `;
 
 export const Installment = styled.div`

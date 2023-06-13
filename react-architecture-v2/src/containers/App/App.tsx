@@ -9,7 +9,7 @@ export default function AppContainer({ children }: IAppContainerProps) {
     <S.Container>
       <S.Content>
         <Header changePage={navigate} />
-        {children}
+        <S.ContentWrapper>{children}</S.ContentWrapper>
         <Footer />
       </S.Content>
     </S.Container>

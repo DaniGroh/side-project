@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "1",
+    "image": "https://i.imgur.com/UEP5yWx.jpeg",
+    "name": "Blusinha",
+    "price": 100,
+    "size": "P",
+    "amount": 2
+  },
+  {
+    "_id": "2",
+    "image": "https://i.imgur.com/zZ6CgXj.jpeg",
+    "name": "Casaco",
+    "price": 145,
+    "size": "G",
+    "amount": 1
+  },
+
+  {
+    "_id": "3",
+    "image": "https://i.imgur.com/MTGMUN0.jpeg",
+    "name": "Jaqueta",
+    "price": 500,
+    "size": "M",
+    "amount": 1
+  },
+  {
+    "_id": "4",
+    "image": "https://i.imgur.com/Kn36BOB.jpeg",
+    "name": "Shorts",
+    "price": 220,
+    "size": "P",
+    "amount": 2
+  }
+]

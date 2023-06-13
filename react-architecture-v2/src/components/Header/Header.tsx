@@ -2,6 +2,7 @@ import { useCallback } from 'react';
 import { MdOutlineShoppingBag, MdSearch } from 'react-icons/md';
 import logo from '../../assets/logo.png';
 import { IHeaderProps, IPage } from './interfaces';
+import CustomerBag from '../../mocks/bag.json';
 import * as S from './styles';
 
 export function Header({ changePage }: IHeaderProps) {
@@ -50,9 +51,9 @@ export function Header({ changePage }: IHeaderProps) {
           <S.Search>
             <MdSearch size={22} />
           </S.Search>
-          <S.Bag>
+          <S.Bag onClick={() => changePage('/sacola')}>
             <MdOutlineShoppingBag size={22} />
-            <S.ItensOnBag>1</S.ItensOnBag>
+            <S.ItensOnBag>{CustomerBag.length}</S.ItensOnBag>
           </S.Bag>
         </S.Actions>
       </S.Header>

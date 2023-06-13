@@ -15,17 +15,14 @@ export function ProductBox({ data }: IProductBoxProps) {
       >
         <S.ProductImage src={data.image} alt="Banner" />
         <S.SizeContainer visible={sizeVisible}>
-          {data.size.map((possibleSize) =>
-            possibleSize.available ? (
-              <S.SizeAvailabel key={possibleSize.sizeName}>
-                {possibleSize.sizeName}
-              </S.SizeAvailabel>
-            ) : (
-              <S.SizeUnavailabel key={possibleSize.sizeName}>
-                {possibleSize.sizeName}
-              </S.SizeUnavailabel>
-            )
-          )}
+          {data.size.map((possibleSize) => (
+            <S.SizeAvailable
+              key={possibleSize.sizeName}
+              available={possibleSize.available}
+            >
+              {possibleSize.sizeName}
+            </S.SizeAvailable>
+          ))}
         </S.SizeContainer>
       </S.ProductBanner>
 

@@ -8,17 +8,13 @@ export const theme = {
     yellow: '#ffda78',
     purple: '#b4a5ff',
     green: '#f4fcf8',
+    red: '#d0312d',
   },
-  font: {
-    weight: {
-      thin: 100,
-      light: 300,
-      normal: 400,
-      semiBold: 600,
-      bold: 700,
-    },
-    family: {
-      workSans: "'Work Sans', sans-serif",
-    },
+  fontWeight: {
+    thin: 100,
+    light: 300,
+    normal: 400,
+    semiBold: 600,
+    bold: 700,
   },
 };

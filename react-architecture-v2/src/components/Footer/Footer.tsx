@@ -21,7 +21,6 @@ export function Footer() {
           <button type="button">devolução</button>
           <button type="button">status do pedido</button>
           <button type="button">whatsapp</button>
-          <button type="button">fala farm</button>
           <button
             type="button"
             onClick={() => {

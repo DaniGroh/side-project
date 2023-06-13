@@ -9,6 +9,9 @@ export default {
     CLOTHING: {
       DEFAULT: '/produto',
     },
+    BAG: {
+      DEFAULT: '/sacola',
+    },
   },
   COMMON: {
     NOT_FOUND: '/404',
